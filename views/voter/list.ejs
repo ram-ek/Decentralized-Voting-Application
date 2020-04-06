@@ -1,0 +1,47 @@
+<!--Voter
+including header content which is common for all pages
+-->
+<%- include ../layouts/header.ejs %>
+
+
+<table width='80%' border=0>
+
+	<tr style='text-align:left; background-color:#CCC'>
+		<th>Name</th>
+		<th>ID Number</th>
+		<th>Email</th>
+		<th>Action</th>
+	</tr>
+
+	<!--
+		Using FOREACH LOOP for the users array
+
+		myArray.forEach(function(el, index) {
+			// el - current element, i - index
+		});
+	-->
+	<% if (data) { %>
+	<% data.forEach(function(voter){ %>
+		<tr>
+			<td><%= voter.name %></td>
+			<td><%= voter.idno %></td>
+			<td><%= voter.email %></td>
+			<td>
+				<div style="float:left">
+					<a href='/voters/edit/<%= voter._id %>'>Edit</a> &nbsp;
+					<form method="post" action="/voters/delete/<%= voter._id %>" style="float:right">
+						<input type="submit" name="delete" value='Delete' onClick="return confirm('Are you sure you want to delete?')" />
+						<input type="hidden" name="_method" value="DELETE" />
+					</form>
+				</div>
+			</td>
+		</tr>
+	<% }) %>
+	<% } %>
+
+</table>
+
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../layouts/footer.ejs %>

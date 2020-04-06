@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Cast your vote</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/vote.css">
+  </head>
+  <body>
+    <div id="container-vote">
+        <span class="vote-title">
+          Cast your Vote</span>
+          <br>
+          <!--  code for card here  -->
+   
+            <div class="card-deck" id="controlpanel">
+              <!-- Fixed card for Vote for none -->
+              <div class="card text-center border-primary">
+                <img class="card-img-top" src="images/nota1.png" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">None</h5>
+                  <p class="card-text">Your Vote will be recorded as <b> NULL</b></p>
+                  <a href="#" class="btn btn-success" id="None_Voted" onclick="reply_click(this.id)">Vote</a>
+                </div>
+
+                <!-- Dynamic cards are added here -->
+              
+      </div>
+	<script src="js/web31.js" ></script>
+    <script src="js/vote.js" ></script>
+	
+  </body>
+</html>

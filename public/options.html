@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1",shrink-to-fit="no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+
+        <link rel="stylesheet" href="css/style_admin.css">
+    </head>
+    <body>
+      <!-- <img class="wave" src="images/wave.png"> -->
+        <div class="row">
+            <div class="col-sm-6" id="split-left">
+              <div class="m-4 p-4 card border border-dark rounded-pill">
+                <div class="card-body text-center ">
+                  <h3 class="card-title">Voter Details</h3>
+                  <p class="card-text">Know the list of all the eligible voters</p>
+                  <a id="voter-btn" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6" id="split-right">
+              <div class="m-4 p-4 border border-dark rounded-pill">
+                <div class="card-body text-center">
+                  <h3 class="card-title">Party Details</h3>
+                  <p class="card-text">Know the information related to all the Parties</p>
+                  <a  id="party-btn" class="btn btn-primary">View</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="table-wrapper"   id="voter-table">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Voter Details</b></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new-voter" id="add-voter-btn"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered" id="vote">
+                <thead>
+                    <tr>
+                        <th>ID Number</th>
+                        <th>Department</th>
+                        <!-- <th>Phone</th> -->
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>173202180</td>
+                        <td>Computer Engineering</td>
+                        <!-- <td>(171) 555-2222</td> -->
+                        <td>
+              <a href="/insertVoter" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a href="/editVoter" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="/deleteVoter" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+          <div class="table-wrapper"  id="party-table">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Party Details</b></h2></div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new-candidate" id="add-new-candidate"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-bordered" id="party">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <!-- <th>Phone</th> -->
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Administration</td>
+                        <!-- <td>(171) 555-2222</td> -->
+                        <td>
+							<a href="/insertCandidate" class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                            <a href="/editCandidate" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="/deleteCandidate" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/option-main.js"></script>
+    </body>
+</html>

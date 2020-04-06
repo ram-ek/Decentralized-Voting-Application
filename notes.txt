@@ -1,0 +1,29 @@
+Body parser
+in order to read HTTP POST data , we have to use "body-parser" node module.
+body-parser is a piece of express middleware that reads a form's input and stores it as a javascript object accessible through req.body
+
+Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional HTTP headers to tell browsers to give a web application running
+at one origin, access to selected resources from a different origin. A web application executes a cross-origin HTTP request when it requests
+a resource that has a different origin (domain, protocol, or port) from its own.
+
+
+=============================================================================================================================================
+SMTP
+SMTP is part of the application layer of the TCP/IP protocol.
+Using a process called "store and forward," SMTP moves your email on and across networks.
+It works closely with something called the Mail Transfer Agent (MTA) to send your communication to the right computer and email inbox.
+SMTP is able to transfer only text—it isn't able to handle fonts, graphics, attachments, etc.—maybe that's why it's called simple.
+Fortunately, Multipurpose Internet Mail Extensions were created to lend a hand.
+MIME encodes all the non-text content into plain text. In that transformed format, SMTP is coaxed into transferring the data.
+
+
+To use your own email to send emails, enable 'Less secure apps' settings from your google account
+==============================================================================================================================================
+
+mongodb
+There is no concept of create db in mongo.
+
+=================================TODO====================================================
+1.Handle middleware (in the client side js file),send it to server side
+2.Make MongoDb retrieve, insert functions works
+3.Make sure to include all files
