@@ -8,8 +8,8 @@
 
 ## Execution (For Windows Only)
 1. First run the init.bat file, this will create a directory as Blockchain.
-2. Next run the run.bat file, this will start up the node.
-3. Next run the node server with
+2. Next run the run.bat file, this will start up the blockchain node.
+3. Next run the nodejs server with
 ```
 npm start
 ```
