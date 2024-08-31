@@ -1,6 +1,8 @@
 # Decentralized Voting Application
 ## Overview
 - This application is used for voting purposes and utilizes Blockchain for better security and tamper-free process.
+- It involves making our own cluster of computers to act as blockchain nodes which would work together to make our own distributed blockchain system.
+- It uses go-ethereum (https://geth.ethereum.org/) which is used to build decentralized application.
 
 ## Dependencies
 1. To create the blockchain network, you need to install go-ethereum(https://geth.ethereum.org/downloads).
